@@ -5,28 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prasad Tuvvapati | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Hi, I'm Prasad 👋</h1>
-      <p>Backend + Automation Tester | Selenium | API | Docker | Java</p>
+    <header class="reveal">
+      <h1>👋 Hi, I'm <span class="highlight">Prasad Tuvvapati</span></h1>
+      <p>Backend + Automation Tester | Java | Selenium | Docker | API</p>
     </header>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Angular Dashboard</strong> - Admin UI built with Angular + Charts</li>
-        <li><strong>API Test Suite</strong> - REST Assured with report generation</li>
-        <li><strong>Spring Boot Backend</strong> - Auth system and services</li>
-      </ul>
+    <section class="projects reveal">
+      <h2>💼 Projects</h2>
+      <div class="project-card">
+        <h3>Angular Admin Dashboard</h3>
+        <p>Built with Angular & Chart.js for admin analytics</p>
+      </div>
+      <div class="project-card">
+        <h3>API Testing Framework</h3>
+        <p>REST Assured based API framework with reporting</p>
+      </div>
+      <div class="project-card">
+        <h3>Spring Boot Auth System</h3>
+        <p>JWT-based authentication and microservices</p>
+      </div>
     </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
+    <section class="contact reveal">
+      <h2>📬 Contact</h2>
       <p>Email: prasad@example.com</p>
-      <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
     </section>
   </div>
+
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      duration: 1000,
+      distance: '50px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      reset: false
+    });
+  </script>
 </body>
 </html>
